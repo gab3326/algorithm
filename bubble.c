@@ -7,13 +7,15 @@ int main()
 	int temp = 0;
 	printf("\n");
 	printf("Before sorting : ");
-	for(int i = 0; i < cnt; i++)
+	int i;
+	for(i = 0; i < cnt; i++)
 	{
 		printf("%d ", Data[i]);
 		if(i==9)
 			printf("\n");
 	}
-	for(int sort = 0; sort < cnt -1; sort++)
+	int sort;
+	for(sort = 0; sort < cnt -1; sort++)
 	{
 		for(int asc = 0; asc < cnt -1 -sort; asc++)
 		{
@@ -26,7 +28,7 @@ int main()
 		}
 	}
 	printf("After sorting : ");
-	for(int i = 0; i < cnt; i++)
+	for(i = 0; i < cnt; i++)
 	{
 		printf("%d ",Data[i]);
 		if(i==9)
@@ -36,7 +38,7 @@ int main()
 	printf("Improved alignment : ");
 	  	
 	int Length = sizeof(Data) / sizeof(Data[0]);
-  	int i = 0;
+  	//int i = 0;
  
   	bubblesort(Data, Length);
   	for (i = 0; i < Length; i++){
